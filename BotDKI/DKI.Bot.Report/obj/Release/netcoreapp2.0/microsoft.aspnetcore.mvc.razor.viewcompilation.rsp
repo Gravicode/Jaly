@@ -1,0 +1,13 @@
+C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=DKI.Bot.Report
+--content-root=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report
+--file=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\Pages\About.cshtml
+--file=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\Pages\Contact.cshtml
+--file=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\Pages\Error.cshtml
+--file=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\Pages\Index.cshtml
+--file=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\Pages\ReportComplain.cshtml
+--file=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\Pages\_Layout.cshtml
+--file=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\Pages\_ValidationScriptsPartial.cshtml
+--file=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\Pages\_ViewImports.cshtml
+--file=C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\Pages\_ViewStart.cshtml
