@@ -13621,11 +13621,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Jobs\\BotDKI\\BotDKI\\DKI.Bot.Report\\DKI.Bot.Report.csproj",
+      "projectUniqueName": "C:\\Jobs\\BotDKI\\Jaly\\BotDKI\\DKI.Bot.Report\\DKI.Bot.Report.csproj",
       "projectName": "DKI.Bot.Report",
-      "projectPath": "C:\\Jobs\\BotDKI\\BotDKI\\DKI.Bot.Report\\DKI.Bot.Report.csproj",
+      "projectPath": "C:\\Jobs\\BotDKI\\Jaly\\BotDKI\\DKI.Bot.Report\\DKI.Bot.Report.csproj",
       "packagesPath": "C:\\Users\\mifma\\.nuget\\packages\\",
-      "outputPath": "C:\\Jobs\\BotDKI\\BotDKI\\DKI.Bot.Report\\obj\\",
+      "outputPath": "C:\\Jobs\\BotDKI\\Jaly\\BotDKI\\DKI.Bot.Report\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

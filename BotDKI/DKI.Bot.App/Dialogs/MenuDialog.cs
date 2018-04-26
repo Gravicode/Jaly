@@ -19,8 +19,8 @@
      
         const string LaporanOption = "Saya ingin melaporkan keluhan";
         const string PublicFacilityOption = "Informasi fasilitas umum";
-        const string PhoneNumberOption = "Mencari nomor penting";
-        const string LocationInfoOption = "Info tentang lokasi (restoran)";
+        const string PhoneNumberOption = "Mencari nomor-nomor penting";
+        const string LocationInfoOption = "Info tentang alamat-alamat penting";
         const string LatestNewsOption = "Berita terbaru";
         const string ReportStatusOption = "Status laporan";
         const string CityAppOption = "Aplikasi-aplikasi jakarta smart city";
@@ -88,10 +88,13 @@
                     //context.Call(new NewsDialog(), this.ResumeAfterOptionDialog);
                     //break;
 
-                    case ThirdPartyOption:
+                 
                         //context.Call(new OtherDialog(), this.ResumeAfterOptionDialog);
                         await context.PostAsync("Maaf abang belum bisa bantu, sabar ya.");
                         context.Done<object>(null);
+                        break;
+                    case ThirdPartyOption:
+                        context.Call(new PhotoArtDialog(), this.ResumeAfterPhotoArtDialog);
                         break;
 
 
@@ -104,7 +107,10 @@
                 context.Wait(this.MessageReceivedAsync);
             }
         }
-
+        private async Task ResumeAfterPhotoArtDialog(IDialogContext context, IAwaitable<object> argument)
+        {
+            context.Done<object>(null);
+        }
         private async Task ResumeAfterSupportDialog(IDialogContext context, IAwaitable<int> result)
         {
             var ticketNumber = await result;

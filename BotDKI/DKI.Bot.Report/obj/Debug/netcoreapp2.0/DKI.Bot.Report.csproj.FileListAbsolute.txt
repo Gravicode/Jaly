@@ -9,3 +9,14 @@ C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\obj\Debug\netcoreapp2.0\DKI.Bot.Report.Asse
 C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\bin\Debug\netcoreapp2.0\DKI.Bot.Report.pdb
 C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\obj\Debug\netcoreapp2.0\DKI.Bot.Report.dll
 C:\Jobs\BotDKI\BotDKI\DKI.Bot.Report\obj\Debug\netcoreapp2.0\DKI.Bot.Report.pdb
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\bin\Debug\netcoreapp2.0\DKI.Bot.Report.deps.json
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\bin\Debug\netcoreapp2.0\DKI.Bot.Report.runtimeconfig.json
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\bin\Debug\netcoreapp2.0\DKI.Bot.Report.runtimeconfig.dev.json
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\bin\Debug\netcoreapp2.0\DKI.Bot.Report.dll
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\bin\Debug\netcoreapp2.0\DKI.Bot.Report.pdb
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\obj\Debug\netcoreapp2.0\DKI.Bot.Report.csprojResolveAssemblyReference.cache
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\obj\Debug\netcoreapp2.0\DKI.Bot.Report.csproj.CoreCompileInputs.cache
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\obj\Debug\netcoreapp2.0\DKI.Bot.Report.AssemblyInfoInputs.cache
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\obj\Debug\netcoreapp2.0\DKI.Bot.Report.AssemblyInfo.cs
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\obj\Debug\netcoreapp2.0\DKI.Bot.Report.dll
+C:\Jobs\BotDKI\Jaly\BotDKI\DKI.Bot.Report\obj\Debug\netcoreapp2.0\DKI.Bot.Report.pdb

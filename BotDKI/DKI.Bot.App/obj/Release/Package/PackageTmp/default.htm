@@ -1,12 +1,109 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <title></title>
     <meta charset="utf-8" />
+    <link href="https://unpkg.com/botframework-webchat/botchat.css" rel="stylesheet" />
+    <style>
+        .wc-chatview-panel {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        aside {
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            width: calc((100% - 420px) / 2);
+            right: 0;
+            color: #3a96dd;
+        }
+
+            aside div {
+                color: black;
+            }
+
+        #results h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        #results span {
+            color: #006621;
+        }
+
+        #results p {
+            margin-top: 0;
+            word-wrap: break-word;
+            font-weight: normal;
+        }
+    </style>
 </head>
-<body style="font-family:'Segoe UI'">
-    <h1>DKI.Bot.App</h1>
-    <p>Describe your bot here and your terms of use etc.</p>
-    <p>Visit <a href="https://www.botframework.com/">Bot Framework</a> to register your bot. When you register it, remember to set your bot's endpoint to <pre>https://<i>your_bots_hostname</i>/api/messages</pre></p>
+
+<body>
+    <div id="bot">
+    </div>
+    <aside>
+        <h1></h1>
+        <div id="results">
+            <p>...</p>
+        </div>
+    </aside>
+    <script src="https://unpkg.com/botframework-webchat/botchat.js"></script>
+    <script>
+        var botConnection = new BotChat.DirectLine({
+            secret: 'DMd4VhGGzmI.cwA.-Do.e0UYNI4QbtKFnBXWtebqPUKYKUY7K75wFY1IsG74vk8'
+        });
+        var resPanel = document.getElementById('results');
+
+        BotChat.App({
+            botConnection: botConnection,
+            user: { id: 'WebChatUser' },
+            bot: { id: 'DKIBotChannel' },
+            locale: 'en-us',
+        }, document.getElementById('bot'));
+
+        // catch incomming backchannel "event"
+        botConnection.activity$
+            .filter(function (activity) {
+                return activity.type === 'event' && activity.name === 'searchResults';
+            })
+            .subscribe(function (activity) {
+                updateSearchResults(activity.value)
+            });
+
+        function updateSearchResults(results) {
+            console.log(results);
+            resPanel.innerHTML = ''; // clear
+            results.forEach(function (result) {
+                resPanel.appendChild(createSearchResult(result));
+            });
+        }
+
+        function createSearchResult(result) {
+            var el = document.createElement('div');
+            el.innerHTML = '<h3>' + result.Title + '</h3>' +
+                '<p>' + result.Text.substring(0, 140) + '...</p>';
+
+            el.getElementsByTagName('h3')[0]
+                .addEventListener('click', function () {
+                    botConnection
+                        .postActivity({
+                            type: 'event',
+                            value: this.textContent.trim(),
+                            from: { id: 'user' },
+                            name: 'showDetailsOf'
+                        })
+                        .subscribe(function (id) {
+                            console.log('event sent', id);
+                        });
+                });
+
+            return el;
+        }
+    </script>
 </body>
+
 </html>

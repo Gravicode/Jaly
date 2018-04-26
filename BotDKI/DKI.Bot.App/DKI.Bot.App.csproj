@@ -165,6 +165,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Dialogs\MenuDialog.cs" />
+    <Compile Include="Dialogs\PhotoArtDialog.cs" />
+    <Compile Include="Dialogs\PhotoDialog.cs" />
     <Compile Include="Dialogs\ReportDialog.cs" />
     <Compile Include="Dialogs\RootDialog.cs" />
     <Compile Include="Dialogs\SupportDialog.cs" />
@@ -175,6 +177,7 @@
     <Compile Include="HandOff\CommandScorable.cs" />
     <Compile Include="HandOff\Provider.cs" />
     <Compile Include="HandOff\RouterScorable.cs" />
+    <Compile Include="Helpers\Effects.cs" />
     <Compile Include="Helpers\Enkripsi.cs" />
     <Compile Include="Helpers\FileWriter.cs" />
     <Compile Include="Helpers\FormValidation.cs" />
@@ -183,6 +186,7 @@
     <Compile Include="Helpers\Logs.cs" />
     <Compile Include="Helpers\MESSAGESINFO.cs" />
     <Compile Include="Helpers\ObjectContainer.cs" />
+    <Compile Include="Helpers\OutputCls.cs" />
     <Compile Include="Helpers\PasswordHelper.cs" />
     <Compile Include="Helpers\RedisDB.cs" />
     <Compile Include="Helpers\SampleData.cs" />
